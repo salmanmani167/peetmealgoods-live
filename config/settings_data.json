@@ -728,7 +728,7 @@
           "footer_bottom_bg_gradient": "",
           "show_copyright": true,
           "enable_layout_grid": true,
-          "copyright_content": "<p style=\"line-height: 28px;\">@2020 PetMealGoods. All Rights Reserved. Powered by Sulaman.<\/p>",
+          "copyright_content": "<p style=\"line-height: 28px;\">@2020 PetMealGoods. All Rights Reserved. Powered by <a href=\"https:\/\/www.upwork.com\/freelancers\/sulamanhassan\" target=\"_blank\">Sulaman<\/a>.<\/p>",
           "show_payment": true,
           "payment_margin_top": 0,
           "heading_payment": "",
