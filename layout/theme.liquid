@@ -11,6 +11,7 @@
             <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
         {%- endif -%}
         <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+       {{ 'base.css' | asset_url | stylesheet_tag }}
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -34,10 +35,10 @@
             {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
             {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
         </title>
-
-<!-- Avada Boost Sales Script -->
-{% render 'avada-boost-sales' %}
-<!-- /Avada Boost Sales Script -->
+        
+        <!-- Avada Boost Sales Script -->
+        {% render 'avada-boost-sales' %}
+        <!-- /Avada Boost Sales Script -->
 
 
         {% if page_description %}
@@ -47,9 +48,6 @@
         {{ content_for_header }}
 
         {% render 'variable' %}
-
-        {{ 'base.css' | asset_url | stylesheet_tag }}
-
         {%- if settings.use_custom_css -%}
             {{ 'custom.css' | asset_url | stylesheet_tag }}
         {%- endif -%}
