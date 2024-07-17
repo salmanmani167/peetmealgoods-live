@@ -55,6 +55,15 @@
         {%- endif -%}
 
         <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HF3BX5S0J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4HF3BX5S0J');
+</script>
     </head>
 
     {%- liquid
@@ -120,7 +129,11 @@
     -%}
 
     <body class="template-{{ request.page_type }} {{layout_header}} {{layout_body}} {{layout_footer}} {{style_dots}} {{style_text_size_varriant}} {{style_arrows}} {{product_card_layout}} {{ banner_animation }}{% if settings.enable_button_disable_arrows %} enable_button_disable_arrows{% endif %}{% if settings.display_text_color_title %} enable_text_color_title{% endif %}{% if settings.style_text_color_varriant == '02' %} style_2_text_color_varriant{% endif %}{% if settings.hide_compare_homepage %} hide_compare_homepage{% endif %} {{ quick_shop_type }}{% if settings.show_image_loading %} show_image_loading{% endif %}{% if settings.show_effect_close %} show_effect_close{% endif %}">
-        <div class="body-content-wrapper">    
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGMKL68S"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) --> 
+      <div class="body-content-wrapper">    
             {% render 'global-style' %}
             {% render 'global-script' %}
             <a class="skip-to-content-link button visually-hidden" href="#MainContent">
