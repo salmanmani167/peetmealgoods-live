@@ -49,7 +49,7 @@
         "16321237356a896dad-0": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify:\/\/shop_images\/cat-background.webp",
+            "image_slide": "shopify:\/\/shop_images\/slideshow.webp",
             "alignment": "left",
             "enable_custom_position": false,
             "custom_horizontal": "40",
