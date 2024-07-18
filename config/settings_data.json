@@ -440,8 +440,8 @@
           "announcement-bar-0"
         ],
         "settings": {
-          "enable_close": false,
-          "arrow_active": false,
+          "enable_close": true,
+          "arrow_active": true,
           "color_text": "#051c42",
           "bg_color_text": "#ffffff",
           "bg_color_text_gradient": "",
@@ -1246,7 +1246,7 @@
           "show_megamenu": true,
           "enable_sticky_header": true,
           "hide_scroll": true,
-          "show_search": true,
+          "show_search": false,
           "show_cart": true,
           "show_wishlist": true,
           "show_customer": true,
